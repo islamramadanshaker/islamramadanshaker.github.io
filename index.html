@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--CUT-START-->
+<title>Islam Ramadan Shaker</title>
+<meta name="description" content="Islam Ramadan Shaker — BIM Manager and Senior Structural BIM Engineer. Twelve years delivering ISO 19650 BIM, model coordination and shop drawings across KSA, the UAE, Kuwait and Egypt.">
+<link rel="canonical" href="https://islamramadanshaker.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Islam Ramadan Shaker">
+<meta property="og:title" content="Islam Ramadan Shaker — BIM Manager | Senior Structural BIM Engineer">
+<meta property="og:description" content="Twelve years turning design intent into buildable information across KSA, the UAE, Kuwait and Egypt. ISO 19650 delivery, model coordination and shop drawing production.">
+<meta property="og:url" content="https://islamramadanshaker.github.io/">
+<meta property="og:image" content="https://islamramadanshaker.github.io/og.jpg">
+<meta property="og:image:secure_url" content="https://islamramadanshaker.github.io/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Islam Ramadan Shaker — BIM Manager">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_EG">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Islam Ramadan Shaker — BIM Manager | Senior Structural BIM Engineer">
+<meta name="twitter:description" content="ISO 19650 delivery, model coordination and shop drawing production across KSA, the UAE, Kuwait and Egypt.">
+<meta name="twitter:image" content="https://islamramadanshaker.github.io/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<style>
+/* ============================================================
+   Islam Ramadan Shaker — BIM Manager
+   Single visual world: a dark drawing sheet. Committed on
+   purpose, so every colour is painted explicitly.
+   ============================================================ */
+:root{
+  --ground:#0A0F15;
+  --ground-2:#0D141C;
+  --surface:#111A24;
+  --surface-2:#16212D;
+  --line:#1D2A38;
+  --line-soft:#16202B;
+  --ink:#E8EFF7;
+  --ink-2:#AFC0D2;
+  --muted:#7C8FA4;
+  --accent:#3B9EFF;
+  --accent-2:#2FD6C3;
+  --accent-dim:rgba(59,158,255,.14);
+  --warm:#E8B44C;
+  --maxw:1180px;
+  --gut:clamp(16px,4vw,44px);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:Archivo,"IBM Plex Sans",sans-serif;text-wrap:balance;margin:0}
+p{margin:0}
+:focus-visible{outline:2px solid var(--accent-2);outline-offset:3px;border-radius:3px}
+
+/* ---------- drawing-sheet backdrop ---------- */
+.sheet{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.55}
+.sheet svg{width:100%;height:100%}
+.glowA,.glowB{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(110px)}
+.glowA{width:46vw;height:46vw;max-width:620px;max-height:620px;top:-14vw;right:-10vw;background:rgba(59,158,255,.17)}
+.glowB{width:38vw;height:38vw;max-width:520px;max-height:520px;bottom:6vw;left:-14vw;background:rgba(47,214,195,.10)}
+
+/* ---------- shell ---------- */
+.wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding-inline:var(--gut)}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;
+  background:rgba(10,15,21,.82);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-soft)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gut);
+  display:flex;align-items:center;gap:18px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;font-family:Archivo;font-weight:800;
+  letter-spacing:-.02em;font-size:1.03rem}
+.bub{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--accent);
+  display:grid;place-items:center;font-family:"IBM Plex Mono",monospace;
+  font-size:.74rem;font-weight:600;color:var(--accent);flex:none}
+.nav-links{display:flex;gap:4px;margin-left:auto;align-items:center}
+.nav-links a{font-size:.855rem;color:var(--ink-2);padding:8px 11px;border-radius:7px;
+  transition:color .16s,background .16s}
+.nav-links a:hover{color:var(--ink);background:rgba(255,255,255,.045)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:8px;
+  font-family:"IBM Plex Sans";font-weight:600;font-size:.9rem;
+  padding:11px 20px;border:1px solid transparent;cursor:pointer;
+  transition:transform .16s,background .16s,border-color .16s}
+.btn:hover{transform:translateY(-1px)}
+.btn-pri{background:var(--accent);color:#04121F}
+.btn-pri:hover{background:#5CB0FF}
+.btn-gho{border-color:var(--line);color:var(--ink);background:rgba(255,255,255,.03)}
+.btn-gho:hover{border-color:var(--accent);background:rgba(59,158,255,.08)}
+.btn-sm{padding:8px 16px;font-size:.855rem}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(48px,8vw,92px) clamp(44px,7vw,84px)}
+.hero-grid{display:grid;grid-template-columns:1.32fr .88fr;gap:clamp(28px,5vw,60px);align-items:center}
+.tag{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);
+  background:rgba(47,214,195,.05);border-radius:100px;padding:6px 15px 6px 12px;
+  font-family:"IBM Plex Mono",monospace;font-size:.735rem;letter-spacing:.06em;
+  color:var(--ink-2);margin-bottom:22px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent-2);flex:none;
+  box-shadow:0 0 0 3px rgba(47,214,195,.18)}
+h1{font-size:clamp(2.7rem,7.6vw,4.9rem);font-weight:800;line-height:.94;letter-spacing:-.035em}
+h1 .l2{display:block;background:linear-gradient(94deg,var(--accent) 8%,var(--accent-2) 82%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-family:Archivo;font-weight:600;font-size:clamp(1.02rem,2.1vw,1.32rem);
+  color:var(--ink);margin-top:20px;letter-spacing:-.01em;line-height:1.38}
+.role span{color:var(--muted);font-weight:500}
+.lede{color:var(--ink-2);margin-top:18px;max-width:57ch;font-size:1.005rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+/* ---------- title block card ---------- */
+.tblock{border:1px solid var(--line);border-radius:12px;background:var(--surface);
+  overflow:hidden;box-shadow:0 26px 60px -30px rgba(0,0,0,.85)}
+.tb-head{display:flex;justify-content:space-between;align-items:center;
+  padding:9px 14px;border-bottom:1px solid var(--line);background:var(--surface-2);
+  font-family:"IBM Plex Mono",monospace;font-size:.685rem;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--muted)}
+.tb-head b{color:var(--accent-2);font-weight:500}
+.tb-body{padding:26px 20px 6px;text-align:center}
+.photo{width:132px;height:132px;margin:0 auto;border-radius:50%;overflow:hidden;
+  background:var(--ground-2);box-shadow:0 0 0 1px var(--line),0 0 0 6px rgba(59,158,255,.10)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.tb-name{font-family:Archivo;font-weight:700;font-size:1.28rem;margin-top:16px;letter-spacing:-.02em}
+.tb-role{color:var(--muted);font-size:.845rem;margin-top:3px}
+.tb-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:20px}
+.stat{padding:15px 6px;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat:nth-child(3n){border-right:none}
+.stat:nth-child(n+4){border-bottom:none}
+.stat b{display:block;font-family:Archivo;font-weight:800;font-size:1.32rem;
+  color:var(--accent);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;
+  font-size:.615rem;letter-spacing:.07em;color:var(--muted);text-transform:uppercase;margin-top:3px;line-height:1.35}
+
+/* ---------- sections ---------- */
+section{padding-block:clamp(52px,8vw,88px);position:relative}
+.sec-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:clamp(26px,4vw,42px)}
+.sec-bub{width:42px;height:42px;flex:none;margin-top:2px}
+.sec-bub circle{fill:none;stroke:rgba(47,214,195,.34);stroke-width:1.5}
+.sec-bub text{fill:var(--accent-2);font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600}
+.kicker{font-family:"IBM Plex Mono",monospace;font-size:.83rem;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--accent-2);
+  display:block;margin-bottom:11px}
+h2{font-size:clamp(1.75rem,4vw,2.55rem);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.sec-sub{color:var(--ink-2);margin-top:12px;max-width:66ch}
+.rule{height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+
+/* ---------- about ---------- */
+.about{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(26px,5vw,56px)}
+.about p+p{margin-top:15px}
+.about p{color:var(--ink-2)}
+.about strong{color:var(--ink);font-weight:600}
+.facts{border-left:1px solid var(--line);padding-left:24px;display:grid;gap:17px;align-content:start}
+.fact i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.655rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.fact b{font-weight:500;font-size:.945rem;color:var(--ink)}
+
+/* ---------- capability groups ---------- */
+.caps{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cap{background:var(--ground-2);padding:24px 22px}
+.cap h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+.cap h3 em{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.66rem;
+  color:var(--accent);letter-spacing:.1em}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}
+.chip{font-size:.795rem;color:var(--ink-2);border:1px solid var(--line);
+  background:rgba(255,255,255,.022);border-radius:6px;padding:4px 10px;line-height:1.5}
+.chip.hi{border-color:rgba(59,158,255,.42);color:#9FCEFF;background:var(--accent-dim)}
+
+/* ---------- framework ---------- */
+.frame{display:grid;gap:0;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:82px 1fr;gap:clamp(16px,3vw,34px);
+  padding:20px 0;border-bottom:1px solid var(--line);align-items:start;
+  transition:background .18s}
+.step:hover{background:rgba(59,158,255,.035)}
+.lvl{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.06em;
+  color:var(--accent-2);padding-top:3px;white-space:nowrap}
+.step h3{font-size:1.03rem;font-weight:700;letter-spacing:-.005em}
+.step p{color:var(--ink-2);font-size:.925rem;margin-top:5px;max-width:74ch}
+
+/* ---------- case study ---------- */
+.case{border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
+.case-top{padding:clamp(22px,4vw,32px);border-bottom:1px solid var(--line)}
+.case-top p{color:var(--ink-2);max-width:74ch}
+.case-top p+p{margin-top:13px}
+.ba{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  gap:clamp(14px,3vw,30px);padding:clamp(24px,4vw,34px);background:var(--ground-2)}
+.rev{border:1px solid var(--line);border-radius:11px;padding:22px 18px;text-align:center;background:var(--surface)}
+.rev.after{border-color:rgba(47,214,195,.42);box-shadow:0 0 0 1px rgba(47,214,195,.1)}
+.rev i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.66rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.rev b{display:block;font-family:Archivo;font-weight:900;font-size:clamp(2.6rem,7vw,3.7rem);
+  line-height:1;letter-spacing:-.045em;margin:9px 0 2px;font-variant-numeric:tabular-nums}
+.rev.before b{color:var(--ink)}
+.rev.after b{color:var(--accent-2)}
+.rev em{font-style:normal;font-size:.78rem;color:var(--muted);display:block}
+.rev small{display:block;margin-top:11px;padding-top:11px;border-top:1px solid var(--line);
+  font-family:"IBM Plex Mono",monospace;font-size:.68rem;color:var(--ink-2);letter-spacing:.03em}
+.arrow{font-family:"IBM Plex Mono",monospace;color:var(--accent);font-size:1.5rem;text-align:center}
+.split{padding:0 clamp(22px,4vw,32px) clamp(24px,4vw,32px);background:var(--ground-2)}
+.disc{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center;
+  padding:13px 0;border-top:1px solid var(--line)}
+.disc-k{font-family:"IBM Plex Mono",monospace;font-size:.76rem;font-weight:600;color:var(--accent)}
+.disc-v{display:flex;flex-wrap:wrap;gap:6px}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);background:var(--ground-2);
+  border-bottom:1px solid var(--line)}
+.kpi{padding:22px 14px;text-align:center;border-right:1px solid var(--line)}
+.kpi:last-child{border-right:none}
+.kpi b{display:block;font-family:Archivo;font-weight:900;font-size:clamp(1.8rem,4.4vw,2.6rem);
+  line-height:1;letter-spacing:-.04em;color:var(--accent-2);font-variant-numeric:tabular-nums}
+.kpi i{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.635rem;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin-top:9px;line-height:1.4}
+.how{padding:clamp(22px,4vw,32px);background:var(--ground-2)}
+.how h3{font-size:.95rem;font-weight:700;margin-bottom:14px}
+.how ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}
+.how li{color:var(--ink-2);font-size:.93rem;padding-left:20px;position:relative;max-width:82ch}
+.how li::before{content:"";position:absolute;left:0;top:.68em;width:9px;height:1px;background:var(--accent)}
+.how li b{color:var(--ink);font-weight:600}
+.how-close{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
+  color:var(--ink-2);font-size:.93rem;max-width:82ch}
+@media (max-width:640px){ .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpi:nth-child(2n){border-right:none} .kpi:nth-child(-n+2){border-bottom:1px solid var(--line)} }
+
+/* ---------- timeline ---------- */
+.tl{display:grid;gap:0}
+.job{display:grid;grid-template-columns:168px 1fr;gap:clamp(16px,3vw,32px);
+  padding:22px 0;border-top:1px solid var(--line)}
+.job:last-child{border-bottom:1px solid var(--line)}
+.when{font-family:"IBM Plex Mono",monospace;font-size:.755rem;color:var(--accent-2);
+  letter-spacing:.02em;padding-top:4px}
+.when span{display:block;color:var(--muted);font-size:.7rem;margin-top:3px}
+.job h3{font-size:1.06rem;font-weight:700;letter-spacing:-.01em}
+.job .co{color:var(--muted);font-size:.89rem;margin-top:2px}
+.job ul{margin:11px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.job li{color:var(--ink-2);font-size:.925rem;padding-left:17px;position:relative;max-width:76ch}
+.job li::before{content:"";position:absolute;left:0;top:.66em;width:6px;height:1px;background:var(--accent)}
+
+/* ---------- projects ---------- */
+.projs{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:14px}
+.proj{border:1px solid var(--line);border-radius:11px;padding:20px 18px;background:var(--ground-2);
+  display:flex;flex-direction:column;gap:9px;transition:border-color .18s,transform .18s}
+.proj:hover{border-color:rgba(59,158,255,.45);transform:translateY(-2px)}
+.proj .loc{font-family:"IBM Plex Mono",monospace;font-size:.655rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent-2)}
+.proj h3{font-size:1rem;font-weight:700;letter-spacing:-.01em;line-height:1.3}
+.proj p{color:var(--muted);font-size:.85rem;margin-top:auto;padding-top:7px}
+.note{margin-top:20px;font-size:.83rem;color:var(--muted);border-left:2px solid var(--line);padding-left:14px;max-width:70ch}
+
+/* ---------- certs ---------- */
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(26px,5vw,52px)}
+.certs{display:grid;gap:9px}
+.cert{display:flex;align-items:center;gap:13px;border:1px solid var(--line);
+  border-radius:9px;padding:13px 16px;background:var(--ground-2)}
+.cert svg{flex:none}
+.cert b{font-weight:600;font-size:.925rem;display:block}
+.cert i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.635rem;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.edu{border-left:1px solid var(--line);padding-left:24px;display:grid;gap:22px;align-content:start}
+.edu h3{font-size:1rem;font-weight:700}
+.edu p{color:var(--ink-2);font-size:.925rem;margin-top:5px}
+.edu .yr{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--accent-2);letter-spacing:.08em}
+
+/* ---------- contact ---------- */
+.contact{border:1px solid var(--line);border-radius:14px;background:var(--surface);
+  padding:clamp(30px,5vw,52px);text-align:center;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--accent) 32%,var(--accent-2) 68%,transparent)}
+.kicker-c{display:flex;align-items:center;justify-content:center;gap:clamp(10px,3vw,16px);
+  font-family:"IBM Plex Mono",monospace;font-size:.83rem;font-weight:500;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.kicker-c i{display:block;height:1px;width:clamp(26px,9vw,64px);flex:none;
+  background:linear-gradient(90deg,transparent,rgba(59,158,255,.6))}
+.kicker-c i:last-child{background:linear-gradient(90deg,rgba(59,158,255,.6),transparent)}
+.contact h2{margin-bottom:12px}
+.contact p{color:var(--ink-2);max-width:56ch;margin:0 auto}
+.lines{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
+.line{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);
+  border-radius:8px;padding:10px 16px;font-size:.9rem;color:var(--ink);
+  background:var(--ground-2);transition:border-color .18s}
+.line:hover{border-color:var(--accent)}
+.line svg{flex:none;color:var(--accent)}
+
+/* ---------- model gallery ---------- */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.plate{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);
+  transition:border-color .2s,transform .2s;cursor:zoom-in;display:block;width:100%;
+  text-align:left;padding:0;font:inherit;color:inherit}
+.plate:hover{border-color:rgba(59,158,255,.5);transform:translateY(-2px)}
+.plate-img{background:#FBFCFD;padding:14px;display:grid;place-items:center;min-height:190px}
+.gal .plate-img{aspect-ratio:16/9;min-height:0}
+.gal .plate-img img{max-height:100%;width:auto;object-fit:contain}
+.plate-img img{width:100%;height:auto;mix-blend-mode:multiply}
+.plate-cap{padding:14px 16px;border-top:1px solid var(--line);display:flex;gap:12px;
+  align-items:baseline;justify-content:space-between}
+.plate-cap b{font-family:Archivo;font-weight:700;font-size:.95rem;letter-spacing:-.01em}
+.plate-cap i{font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:.635rem;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--accent-2);white-space:nowrap}
+.plate-cap p{color:var(--muted);font-size:.815rem;margin-top:3px}
+
+.gal-sub{font-size:1.05rem;font-weight:700;letter-spacing:-.01em;margin-top:30px;
+  padding-top:22px;border-top:1px solid var(--line);color:var(--ink)}
+.views{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.plate-img.view{padding:0;background:var(--ground-2);min-height:0}
+.plate-img.view img{mix-blend-mode:normal;aspect-ratio:16/10;object-fit:cover;height:auto}
+.certgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.plate-img.cert{padding:0;background:#fff;min-height:0}
+.plate-img.cert img{mix-blend-mode:normal;aspect-ratio:1000/705;object-fit:cover;object-position:center bottom}
+.edu-row{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(22px,4vw,48px);
+  margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+.edu-row h3{font-size:1rem;font-weight:700;margin-top:4px}
+.edu-row p{color:var(--ink-2);font-size:.925rem;margin-top:5px}
+.edu-row .yr{font-family:"IBM Plex Mono",monospace;font-size:.7rem;color:var(--accent-2);letter-spacing:.08em}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(6,10,14,.94);
+  display:grid;place-items:center;padding:clamp(16px,4vw,48px)}
+.lb img{max-width:100%;max-height:82vh;width:auto;background:#fff;border-radius:8px;
+  padding:12px;box-shadow:0 30px 80px -20px rgba(0,0,0,.9)}
+.lb-close{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));right:16px;
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+  background:var(--surface);color:var(--ink);font-size:1.15rem;cursor:pointer;line-height:1}
+.lb-cap{position:absolute;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:0;right:0;
+  text-align:center;font-family:"IBM Plex Mono",monospace;font-size:.72rem;
+  letter-spacing:.09em;color:var(--ink-2);padding-inline:16px}
+
+footer{border-top:1px solid var(--line-soft);padding-block:26px;margin-top:clamp(40px,7vw,72px)}
+.foot{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;
+  font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.06em;color:var(--muted)}
+
+
+/* ---------- language toggle + RTL ---------- */
+.lang{margin-left:6px;border:1px solid var(--line);background:rgba(255,255,255,.04);
+  color:var(--ink);border-radius:100px;padding:7px 15px;font-size:.83rem;font-weight:600;
+  font-family:"IBM Plex Sans Arabic","IBM Plex Sans",sans-serif;cursor:pointer;flex:none;
+  transition:border-color .16s,background .16s}
+.lang:hover{border-color:var(--accent-2);background:rgba(47,214,195,.10)}
+
+body.rtl{font-family:"IBM Plex Sans Arabic","IBM Plex Sans",sans-serif}
+body.rtl h1,body.rtl h2,body.rtl h3,body.rtl h4,body.rtl .tb-name,
+body.rtl .kpi b,body.rtl .stat b,body.rtl .gal-sub{font-family:"IBM Plex Sans Arabic",Archivo,sans-serif}
+body.rtl .kicker,body.rtl .kicker-c,body.rtl .lvl,body.rtl .loc,body.rtl .tag,
+body.rtl .plate-cap i,body.rtl .stat i,body.rtl .kpi i,body.rtl .fact i,
+body.rtl .when,body.rtl .when span,body.rtl .yr,body.rtl .foot,
+body.rtl .cap h3 em,body.rtl .disc-k{font-family:"IBM Plex Sans Arabic","IBM Plex Mono",monospace}
+/* Arabic is cursive — letter-spacing breaks the joins */
+body.rtl .kicker,body.rtl .kicker-c,body.rtl .lvl,body.rtl .loc,body.rtl .tag,
+body.rtl .plate-cap i,body.rtl .stat i,body.rtl .kpi i,body.rtl .fact i,
+body.rtl .when,body.rtl .yr,body.rtl .foot,body.rtl h1,body.rtl h2,
+body.rtl .tb-name,body.rtl .kpi b{letter-spacing:0}
+body.rtl h1{line-height:1.18}
+body.rtl h2{line-height:1.3}
+body.rtl .nav-links{margin-left:0;margin-right:auto}
+body.rtl .lang{margin-left:0;margin-right:6px}
+body.rtl .facts{border-left:none;border-right:1px solid var(--line);padding-left:0;padding-right:24px}
+body.rtl .note{border-left:none;border-right:2px solid var(--line);padding-left:0;padding-right:14px}
+body.rtl .copy,body.rtl .job li,body.rtl .how li{padding-left:0;padding-right:18px}
+body.rtl .job li::before,body.rtl .how li::before{left:auto;right:0}
+body.rtl .stat{border-right:none;border-left:1px solid var(--line)}
+body.rtl .stat:nth-child(3n){border-left:none}
+body.rtl .kpi{border-right:none;border-left:1px solid var(--line)}
+body.rtl .kpi:last-child{border-left:none}
+body.rtl .lb-close{right:auto;left:16px}
+/* keep Latin-only runs reading left-to-right inside the RTL page */
+body.rtl .brand{direction:ltr}
+body.rtl .line{direction:ltr}
+body.rtl .co,body.rtl .when{direction:ltr;text-align:right}
+body.rtl .proj h3,body.rtl .plate-cap b{direction:ltr;text-align:right}
+body.rtl .lede,body.rtl .sec-sub,body.rtl .about p,body.rtl .case-top p{max-width:60ch}
+@media (max-width:640px){ body.rtl .when span{margin-left:0;margin-right:8px} }
+@media (max-width:860px){ .lang{padding:6px 12px;font-size:.78rem} }
+
+/* ---------- custom cursor + motion layer ---------- */
+.nav-in .btn,.nav-links a{white-space:nowrap}
+@media (max-width:940px){.nav-links a:not(.keep){display:none}}
+
+@media (hover:hover) and (pointer:fine){
+  html.js.cur,html.js.cur *{cursor:none!important}
+  .cur-ring{position:fixed;top:0;left:0;width:38px;height:38px;margin:-19px 0 0 -19px;
+    border:1.5px solid var(--accent-2);border-radius:50%;pointer-events:none;z-index:9998;
+    display:grid;place-items:center;will-change:transform;
+    transition:width .25s cubic-bezier(.2,.8,.2,1),height .25s cubic-bezier(.2,.8,.2,1),
+      margin .25s cubic-bezier(.2,.8,.2,1),background-color .25s,border-color .25s,opacity .25s}
+  .cur-ring b{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.14em;
+    font-weight:600;color:#061019;opacity:0;transition:opacity .18s;white-space:nowrap}
+  .cur-dot{position:fixed;top:0;left:0;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;
+    background:var(--accent);pointer-events:none;z-index:9999;will-change:transform}
+  .cur-hide{opacity:0}
+}
+.cur-ring,.cur-dot{display:none}
+@media (hover:hover) and (pointer:fine){.cur-ring{display:grid}.cur-dot{display:block}}
+html.js .wsplit{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.06em}
+html.js .wsplit>span{display:inline-block;animation:wordIn .95s cubic-bezier(.16,1,.3,1) both}
+@keyframes wordIn{from{opacity:0;transform:translateY(105%) rotate(3deg)}
+  to{opacity:1;transform:translateY(0) rotate(0)}}
+@keyframes irsBlink{0%,100%{opacity:1}50%{opacity:.18}}
+html.js .kicker,html.js .kicker-c{animation:fadeSoft .8s .1s both}
+@keyframes fadeSoft{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.mag{transition:transform .4s cubic-bezier(.2,1.4,.4,1)}
+@media (prefers-reduced-motion:reduce){
+  html.js .wsplit>span,html.js .kicker,html.js .kicker-c{animation:none!important;opacity:1!important;transform:none!important}
+  .cur-ring,.cur-dot{display:none!important}
+  html.js.cur,html.js.cur *{cursor:auto!important}
+}
+
+/* ---------- reveal ---------- */
+.rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .js .rv.in{opacity:1;transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:38px}
+  .tblock{max-width:420px;margin-inline:auto;width:100%}
+  .about,.two{grid-template-columns:1fr}
+  .facts,.edu{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:22px}
+  .caps{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr}
+  .certgrid{grid-template-columns:repeat(2,1fr)}
+  .views{grid-template-columns:1fr}
+  .edu-row{grid-template-columns:1fr;gap:20px}
+}
+@media (max-width:860px){ .nav-links a:not(.keep){display:none} }
+@media (max-width:560px){ .certgrid{grid-template-columns:1fr} }
+@media (max-width:640px){
+  .job{grid-template-columns:1fr;gap:8px}
+  .when{padding-top:0}
+  .when span{display:inline;margin-left:8px}
+  .step{grid-template-columns:1fr;gap:5px}
+  .ba{grid-template-columns:1fr;gap:12px}
+  .arrow{transform:rotate(90deg)}
+  .disc{grid-template-columns:1fr;gap:8px;align-items:start}
+}
+</style>
+<!--CUT-END-HEAD-->
+</head>
+<body>
+<!--BODY-START-->
+
+<div class="sheet" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <defs>
+      <pattern id="g" width="72" height="72" patternUnits="userSpaceOnUse">
+        <path d="M72 0H0V72" fill="none" stroke="#16202B" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#g)"/>
+  </svg>
+</div>
+<div class="glowA" aria-hidden="true"></div>
+<div class="glowB" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand"><span class="bub">IR</span> Islam<span style="color:var(--accent)">.</span>Ramadan</a>
+    <div class="nav-links">
+      <a href="#about" data-ar="نبذة">About</a>
+      <a href="#capabilities" data-ar="الخبرات">Capabilities</a>
+      <a href="#framework" data-ar="منهجية العمل">Framework</a>
+      <a href="#case" data-ar="دراسة حالة">Case Study</a>
+      <a href="#experience" data-ar="المسيرة المهنية">Experience</a>
+      <a href="#projects" data-ar="المشاريع">Projects</a>
+      <a href="#models" data-ar="النماذج">Models</a>
+      <a class="btn btn-pri btn-sm keep" href="#contact" data-ar="تواصل معي">Get in touch</a>
+      <button class="lang keep" id="langBtn" type="button" aria-label="Switch language">العربية</button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="tag" data-ar="<span class=dot></span> متاح لوظائف إدارة الـ BIM وكبير مهندسي BIM الإنشائي"><span class="dot"></span> Available for BIM Management &amp; Senior Structural BIM roles</span>
+        <h1 data-ar="إسلام رمضان<span class=l2>شاكر</span>">Islam Ramadan<span class="l2">Shaker</span></h1>
+        <p class="role" data-ar="مدير BIM <span>|</span> كبير مهندسي BIM الإنشائي">BIM Manager <span>|</span> Senior Structural BIM Engineer</p>
+        <p class="lede" data-ar="اثنا عشر عامًا في تحويل الفكرة التصميمية إلى معلومات قابلة للتنفيذ، عبر السعودية والإمارات والكويت ومصر. أضع المعايير التي يسير عليها المشروع، وأبني البيئة التي تعيش فيها نماذجه، وأقود الفرق التي تحوّل تلك النماذج إلى رسومات تنفيذية معتمدة.">Twelve years turning design intent into buildable information across Saudi Arabia, the UAE, Kuwait and Egypt. I set the standards a project runs on, structure the environment its models live in, and lead the teams that turn those models into approved shop drawings.</p>
+        <div class="cta">
+          <a class="btn btn-pri" href="#contact" data-ar="تواصل معي ←">Get in touch →</a>
+          <a class="btn btn-gho" href="#experience" data-ar="المسيرة المهنية">Experience</a>
+          <a class="btn btn-gho" href="#projects" data-ar="المشاريع">Projects</a>
+          <a class="btn btn-gho" href="#models" data-ar="شاهد النماذج">See the models</a>
+          <button class="btn btn-gho dl-cv" type="button" data-ar="حمّل السيرة الذاتية">Download CV ↓</button>
+        </div>
+      </div>
+
+      <aside class="tblock">
+        <div class="tb-body">
+          <div class="photo"><img src="assets/photo.jpg" alt="Islam Ramadan Shaker" width="360" height="360"></div>
+          <div class="tb-name" data-ar="إسلام رمضان شاكر">Islam Ramadan Shaker</div>
+          <div class="tb-role" data-ar="مدير BIM · القاهرة، مصر">BIM Manager · Cairo, Egypt</div>
+        </div>
+        <div class="tb-stats">
+          <div class="stat"><b>12+</b><i data-ar="سنة خبرة">Years</i></div>
+          <div class="stat"><b>18</b><i data-ar="مهندسًا بقيادتي">Engineers Led</i></div>
+          <div class="stat"><b>6</b><i data-ar="مشاريع متزامنة">Concurrent Projects</i></div>
+          <div class="stat"><b>15k</b><i data-ar="لوحة صادرة">Sheets Issued</i></div>
+          <div class="stat"><b>95%</b><i data-ar="اعتماد من أول مرة">First-Time Approval</i></div>
+          <div class="stat"><b>4</b><i data-ar="شهادات Autodesk">Autodesk ATC Certs</i></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">A</text></svg>
+      <div><span class="kicker" data-ar="نبذة">Profile</span><h2 data-ar="إدارة المعلومات، لا مجرّد نمذجة">Information management, not just modelling</h2></div>
+    </div>
+    <div class="about">
+      <div>
+        <p data-ar="أعمل عند النقطة التي تتحوّل فيها الفكرة التصميمية إلى معلومات قابلة للبناء. على مدى اثني عشر عامًا سلّمت أعمال البحيرات ومعالجة المياه، والضيافة والوحدات السكنية الفندقية، والحرم الجامعي، والمستشفيات، والحدائق العامة، وبرامج البنية التحتية القومية — من جانب الاستشاري، ومن المكتب الفني للمالك، ومن جانب المقاول.">I work where design intent becomes buildable information. Over twelve years I have delivered on lagoon and water treatment works, hospitality and branded residences, university campuses, hospitals, urban parks and national infrastructure programmes — from the consultant's side, from the owner's technical office, and from the contractor's side.</p>
+        <p data-ar="هذا التنوّع هو جوهر الأمر. بعد أن أنتجت الرسومات التنفيذية، وراجعتها بصفتي المالك، وأصبحت الآن أكتب المعايير التي تحكمها، أعرف أي قواعد الـ BIM تصمد أمام واقع الموقع وأيها يبدو جيدًا على الورق فقط.">That range is the point. Having produced the shop drawings, checked them as the owner, and now written the standards that govern them, I know which BIM rules survive contact with a site and which ones only look good in a document.</p>
+        <p data-ar="<strong>ما أقدّمه هو الإطار الذي يُبقي مجموعة نماذج متعدّدة التخصصات منسّقة وقابلة للتدقيق ومتوافقة مع ISO 19650</strong> — من أول نموذج موحّد إلى آخر لوحة معتمدة — إضافة إلى قيادة الفريق التي تُبقي الإنتاج متحرّكًا أثناء تطبيق هذا الإطار."><strong>What I bring is the framework that keeps a multi-discipline model set coordinated, auditable and aligned with ISO 19650</strong> — from the first federated model to the last approved sheet — and the team leadership to keep production moving while that framework is enforced.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><i data-ar="مقر الإقامة">Based in</i><b data-ar="القاهرة، مصر">Cairo, Egypt</b></div>
+        <div class="fact"><i data-ar="سلّمت في">Delivered across</i><b data-ar="السعودية · الإمارات · الكويت · مصر">KSA · UAE · Kuwait · Egypt</b></div>
+        <div class="fact"><i data-ar="الدور الحالي">Current role</i><b data-ar="مدير BIM من جانب المقاول — جميع التخصصات">BIM Manager, contractor side — all disciplines</b></div>
+        <div class="fact"><i data-ar="بيئة البيانات المشتركة">CDE</i><b data-ar="Autodesk Construction Cloud — مسؤول Hub">Autodesk Construction Cloud — Hub Admin</b></div>
+        <div class="fact"><i data-ar="اللغات">Languages</i><b data-ar="العربية (اللغة الأم) · الإنجليزية">Arabic (native) · English</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CAPABILITIES ===================== -->
+<section id="capabilities">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">B</text></svg>
+      <div><span class="kicker" data-ar="الخبرات">Capabilities</span><h2 data-ar="ما أتحمّل مسؤوليته">What I am accountable for</h2>
+      <p class="sec-sub" data-ar="العناصر المميّزة هي التي أمتلكها بالكامل في المشروع، لا التي أساهم فيها فقط.">Highlighted items are the ones I own outright on a project rather than contribute to.</p></div>
+    </div>
+    <div class="caps">
+      <div class="cap">
+        <h3><em>01</em> <span data-ar="إدارة الـ BIM والمعايير">BIM Management &amp; Standards</span></h3>
+        <div class="chips">
+          <span class="chip hi" data-ar="تطبيق ISO 19650">ISO 19650 Implementation</span><span class="chip hi" data-ar="خطة تنفيذ الـ BIM">BIM Execution Plan</span>
+          <span class="chip hi" data-ar="استراتيجية تقسيم ودمج النماذج">Model Segregation &amp; Federation Strategy</span><span class="chip hi" data-ar="سجل النماذج">Model Register</span>
+          <span class="chip hi" data-ar="نظام التسمية">Naming Convention</span><span class="chip hi" data-ar="مصفوفة التعارضات">Clash Matrix</span>
+          <span class="chip" data-ar="تدقيق النماذج وسلامتها">Model Auditing &amp; Model Health</span><span class="chip" data-ar="ضبط الإصدارات والمراجعات">Version &amp; Revision Control</span>
+          <span class="chip">LOD / LOI 400–500</span><span class="chip" data-ar="إدارة الإحداثيات">Coordinate Management</span>
+        </div>
+      </div>
+      <div class="cap">
+        <h3><em>02</em> <span data-ar="بيئة البيانات المشتركة">Common Data Environment</span></h3>
+        <div class="chips">
+          <span class="chip hi" data-ar="Autodesk Construction Cloud — مسؤول Hub">Autodesk Construction Cloud — Hub Admin</span><span class="chip hi">BIM 360</span>
+          <span class="chip" data-ar="هيكل المجلدات والصلاحيات">Folder Architecture &amp; Permissions</span><span class="chip">WIP / Shared / Published / Archived</span>
+          <span class="chip" data-ar="تتبّع الملاحظات وإغلاقها">Issue Tracking &amp; Closure</span><span class="chip" data-ar="مذكرات الإرسال">Transmittals</span>
+          <span class="chip" data-ar="العمل السحابي المشترك والـ Worksets">Cloud Worksharing &amp; Worksets</span><span class="chip" data-ar="خوادم أوروبا وأمريكا">EU &amp; US region hubs</span>
+        </div>
+      </div>
+      <div class="cap">
+        <h3><em>03</em> <span data-ar="النمذجة والتنسيق">Authoring &amp; Coordination</span></h3>
+        <div class="chips">
+          <span class="chip">Revit Structure</span><span class="chip">Revit Architecture</span>
+          <span class="chip" data-ar="Civil 3D — شبكات وأسطح">Civil 3D — networks &amp; surfaces</span><span class="chip">Navisworks Manage</span>
+          <span class="chip">ACC Model Coordination</span><span class="chip">IFC &amp; COBie</span>
+          <span class="chip">Dynamo for Revit</span><span class="chip">AutoCAD</span>
+          <span class="chip">ASD</span><span class="chip">SOFiSTiK</span>
+        </div>
+      </div>
+      <div class="cap">
+        <h3><em>04</em> <span data-ar="المكتب الفني والقيادة">Technical Office &amp; Leadership</span></h3>
+        <div class="chips">
+          <span class="chip hi" data-ar="مراجعة واعتماد الرسومات التنفيذية">Shop Drawing Review &amp; Approval</span><span class="chip hi" data-ar="إدارة طلبات المعلومات RFI">RFI Management</span>
+          <span class="chip" data-ar="حصر الكميات">Quantity Surveying</span><span class="chip" data-ar="تقدير التكاليف">Cost Estimation</span>
+          <span class="chip" data-ar="جداول تقطيع الحديد">Bar Bending Schedules</span><span class="chip">Primavera P6</span>
+          <span class="chip" data-ar="الإشراف على الفرق الفنية">Technical Team Supervision</span><span class="chip" data-ar="التعامل مع العميل والاستشاري">Client &amp; Consultant Interface</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FRAMEWORK ===================== -->
+<section id="framework">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">C</text></svg>
+      <div><span class="kicker" data-ar="منهجية التسليم">Delivery Framework</span><h2 data-ar="كل مشروع يسير على العمود الفقري نفسه">Every project runs on the same spine</h2>
+      <p class="sec-sub" data-ar="بحجم يناسبه، وبهذا الترتيب. تخطّي مرحلة لا يوفّر وقتًا — بل ينقل تكلفتها إلى التنسيق. عملت بنفسي في كل مرحلة أدناه، وقدت الفرق التي نفّذتها.">Scaled to its size, in this order. Skipping a stage does not save time — it moves the cost to coordination. I have worked hands-on through every stage below, and led the teams that delivered them.</p></div>
+    </div>
+    <div class="frame">
+      <div class="step"><div class="lvl" data-ar="01 · المعايير">01 · STANDARDS</div><div>
+        <h3 data-ar="الاتفاق على القواعد قبل وجود أول نموذج">Agree the rules before the first model exists</h3>
+        <p data-ar="خطة تنفيذ الـ BIM، ونظام التسمية، ونظام الإحداثيات، ومصفوفة LOD / LOI — يُتفق عليها مع الاستشاري والعميل بينما تغييرها ما زال بلا تكلفة.">BIM Execution Plan, naming convention, coordinate system and the LOD / LOI matrix — settled with the consultant and the client while changing them still costs nothing.</p></div></div>
+      <div class="step"><div class="lvl" data-ar="02 · الهيكلة">02 · STRUCTURE</div><div>
+        <h3 data-ar="تحديد ما يُنمذَج وأين">Decide what gets modelled where</h3>
+        <p data-ar="سجل النماذج واستراتيجية التقسيم: ما النماذج الموجودة، وماذا يحتوي كل منها، ومن يملكه، وكيف تتّحد في كلٍّ واحد منسّق.">The model register and the segregation strategy: which models exist, what each one contains, who owns it, and how they federate into a single coordinated whole.</p></div></div>
+      <div class="step"><div class="lvl" data-ar="03 · البيئة">03 · ENVIRONMENT</div><div>
+        <h3 data-ar="بناء بيئة البيانات المشتركة">Build the Common Data Environment</h3>
+        <p data-ar="هيكل المجلدات، والصلاحيات حسب الدور والشركة، ومسار WIP ← Shared ← Published ← Archived الذي تسلكه كل معلومة، على Autodesk Construction Cloud.">Folder architecture, permissions by role and by company, and the WIP → Shared → Published → Archived route every piece of information travels, on Autodesk Construction Cloud.</p></div></div>
+      <div class="step"><div class="lvl" data-ar="04 · الإنتاج">04 · PRODUCTION</div><div>
+        <h3 data-ar="إطلاق فرق النمذجة للعمل">Let the authoring teams work</h3>
+        <p data-ar="توزيع الـ Worksets حسب المناطق، وتثبيت المناسيب والمحاور المشتركة، وفرض الملكية عبر السجل لا عبر العُرف — حتى لا يصطدم فريق من ثمانية عشر مهندسًا ببعضه.">Worksets assigned by zone, shared levels and grids locked, ownership enforced by the register rather than by convention — so a team of eighteen does not collide with itself.</p></div></div>
+      <div class="step"><div class="lvl" data-ar="05 · التنسيق">05 · COORDINATION</div><div>
+        <h3 data-ar="الدمج بجدول زمني، لا عند وقوع مشكلة">Federate on a schedule, not on a problem</h3>
+        <p data-ar="مصفوفة التعارضات تحدّد أي تخصص يُختبر مع أيّ، وبأي سماحية، وفي أي مرحلة من البرنامج. تتحوّل التعارضات إلى ملاحظات متتبَّعة لها مسؤول وتاريخ؛ والإغلاق يُثبَت في النموذج لا يُعلَن في اجتماع.">The clash matrix decides which discipline is tested against which, at what tolerance and at what point in the programme. Clashes become tracked issues with an owner and a date; closure is evidenced in the model, not declared in a meeting.</p></div></div>
+      <div class="step"><div class="lvl" data-ar="06 · التسليم">06 · DELIVERY</div><div>
+        <h3 data-ar="لوحات مُراجَعة وسجل قابل للتدقيق">Reviewed sheets and an auditable history</h3>
+        <p data-ar="رسومات تنفيذية تُراجَع قبل التقديم، وتقارير إنجاز نموذجًا بنموذج وفق صيغة العميل، وسجل مراجعات يجيب عن: من غيّر ماذا، ومتى.">Shop drawings reviewed before submission, progress reported model by model against the client's own format, and a revision history that can answer who changed what, and when.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CASE STUDY ===================== -->
+<section id="case">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">D</text></svg>
+      <div><span class="kicker" data-ar="دراسة حالة · جامعة الملك سلمان، السعودية">Case Study · King Salman University, KSA</span><h2 data-ar="ستة آلاف لوحة تنفيذية في ستة أشهر">Six thousand shop drawing sheets in six months</h2></div>
+    </div>
+
+    <div class="case">
+      <div class="case-top">
+        <p data-ar="جامعة الملك سلمان حرم جامعي متعدّد المباني في المملكة العربية السعودية. بلغت حزمة الرسومات التنفيذية الإنشائية نحو <strong style=color:var(--ink)>6,000 لوحة</strong>، ومنحنا البرنامج الزمني <strong style=color:var(--ink)>ستة أشهر</strong> لإصدارها كاملة — ألف لوحة شهريًا بوتيرة ثابتة، دون أسابيع هادئة تمتص أي تأخير.">King Salman University is a multi-building campus in the Kingdom of Saudi Arabia. The structural shop drawing package ran to roughly <strong style="color:var(--ink)">6,000 sheets</strong>, and the programme gave us <strong style="color:var(--ink)">six months</strong> to issue all of it — a thousand sheets a month, sustained, with no quiet weeks to absorb a slip.</p>
+        <p data-ar="حافظنا على <strong style=color:var(--ink)>نسبة اعتماد 95% من أول مرة</strong> في تلك الحزمة. في برنامج بهذا الضغط، الرفض هو الشيء الوحيد القادر فعلًا على كسر الجدول الزمني: اللوحة المرتجعة تكلّف الرسم مرتين ودورة المراجعة مرتين. حماية نسبة الاعتماد <em>كانت هي</em> استراتيجية الجدول الزمني.">We held a <strong style="color:var(--ink)">95% first-time approval rate</strong> across that package. On a programme this compressed, rejection is the only thing that can really break the schedule: a returned sheet costs the drawing twice and the review cycle twice. Protecting the approval rate <em>was</em> the schedule strategy.</p>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi"><b>~6,000</b><i data-ar="لوحة تنفيذية">Shop Drawing Sheets</i></div>
+        <div class="kpi"><b>6</b><i data-ar="أشهر للإصدار">Months to Issue</i></div>
+        <div class="kpi"><b>95%</b><i data-ar="اعتماد من أول مرة">First-Time Approval</i></div>
+        <div class="kpi"><b>18</b><i data-ar="مهندسًا بقيادتي">Engineers Led</i></div>
+      </div>
+
+      <div class="how">
+        <h3 data-ar="كيف صمد البرنامج">How it held</h3>
+        <ul>
+          <li data-ar="<b>مصدر واحد للحقيقة.</b> كل لوحة خرجت من نموذج Revit Structure بمستوى LOD 400/500، فأي تغيير في المنشأ غيّر كل رسم يُظهره — دون مجموعة ملفات CAD موازية تبتعد عن النموذج."><b>One source of truth.</b> Every sheet came out of the LOD 400/500 Revit Structure model, so a change to the structure changed every drawing that showed it — no parallel set of CAD files drifting away from the model.</li>
+          <li data-ar="<b>التنسيق انتهى أولًا.</b> وصل النموذج الموحّد إلى حالة خالية من التعارضات في Navisworks مقابل المعماري والـ MEP قبل أن يعمل الإنتاج بكامل طاقته، فكان الفريق يفصّل منشأً تم حسمه بالفعل."><b>Coordination finished first.</b> The federated model was driven clash-free in Navisworks against architecture and MEP before drawing production ran at full rate, so the team was detailing a structure that had already been resolved.</li>
+          <li data-ar="<b>تقسيم الفريق حسب المناطق.</b> ثمانية عشر مهندس BIM إنشائي، بتوزيع الـ Worksets وملكية النماذج حسب المنطقة لا حسب العُرف، فلم ينتظر أحد أحدًا."><b>The team split by zone.</b> Eighteen structural BIM engineers, with worksets and model ownership assigned by zone rather than by convention, so nobody waited on anybody.</li>
+          <li data-ar="<b>بوابة مراجعة لم تتزحزح.</b> مرّت كل لوحة على مراجعتي شخصيًا — الدقة، ومطابقة الكود، وقابلية التنفيذ — قبل أن تغادر المكتب. من هذه البوابة جاءت الـ 95%."><b>A review gate that never moved.</b> Every sheet passed my own review — accuracy, code compliance, constructability — before it left the office. That gate is where the 95% came from.</li>
+          <li data-ar="<b>طلبات المعلومات تُرفع مبكرًا لا متأخرًا.</b> كان يُستفسر عن أي معلومة تصميمية ناقصة أو غامضة أو متعارضة فور أن يكشفها النموذج، فيصل الرد قبل رسم اللوحة لا بعد رفضها."><b>RFIs raised early, not late.</b> Missing, unclear or conflicting design information was queried as soon as the model exposed it, so the answer arrived before the sheet was drawn rather than after it was rejected.</li>
+        </ul>
+        <p class="how-close" data-ar="ما تساويه نسبة الاعتماد باللوحات: عند 95% عاد نحو 300 رسم من الـ 6,000 للتعديل. وعند 80% كانوا سيصبحون 1,200 — أربعة أضعاف إعادة العمل، في برنامج لا مكان فيه للزيادة. ما كانت الستة أشهر لتصمد.">What the approval rate is worth, in sheets: at 95%, around 300 of those 6,000 drawings came back for revision. At 80% it would have been 1,200 — four times the rework, on a programme with nowhere to put it. The six months would not have held.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<section id="experience">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">E</text></svg>
+      <div><span class="kicker" data-ar="المسيرة المهنية">Experience</span><h2 data-ar="اثنا عشر عامًا، من ثلاث زوايا للطاولة">Twelve years, three sides of the table</h2></div>
+    </div>
+    <div class="tl">
+
+      <article class="job">
+        <div class="when">Aug 2026 — Present<span data-ar="مقاول">Contractor</span></div>
+        <div>
+          <h3 data-ar="مدير BIM">BIM Manager</h3>
+          <div class="co">Perfect Engineering &amp; Constructions — Cairo, Egypt</div>
+          <ul>
+            <li data-ar="أقود فريق هندسة المشروع بالكامل عبر جميع التخصصات — الإنشائي والمعماري والميكانيكا والكهرباء والبنية التحتية — وأراجع كل رسم تنفيذي قبل التقديم، وأدير التنسيق بينها.">Lead the full project engineering team across every discipline — structural, architectural, mechanical, electrical and infrastructure — review every shop drawing before submission, and run the coordination between them.</li>
+            <li data-ar="أتولّى تسليم الـ BIM للمشروع: خطة تنفيذ الـ BIM وملاحقها، واستراتيجية التقسيم، ومصفوفة التعارضات، ونظام التسمية، وسجل النماذج متعدّد المراحل.">Own BIM delivery for the project: BIM Execution Plan and appendices, segregation strategy, clash matrix, naming convention and the multi-phase model register.</li>
+            <li data-ar="أدير بيئة البيانات المشتركة على Autodesk Construction Cloud بصفتي Hub Admin — هيكل المجلدات، والصلاحيات، ومسار WIP / Shared / Published، وتتبّع الملاحظات.">Administer the Common Data Environment on Autodesk Construction Cloud as Hub Admin — folder structure, permissions, WIP / Shared / Published workflow and issue tracking.</li>
+            <li data-ar="أنمذج شبكة الصرف تحت السطحية في Civil 3D وأدمجها عبر IFC و NWC مع الحفاظ التام على الإحداثيات.">Model the subsurface drainage network in Civil 3D and federate it via IFC and NWC with exact coordinate preservation.</li>
+            <li data-ar="أتحكّم في سجل طلبات المعلومات مع الاستشاري التصميمي ومدير المشروع، وأصدر تقرير تقدّم النماذج الدوري وفق صيغة العميل.">Control the project RFI register with the design consultant and PM, and issue the periodic model progress report against the client's format.</li>
+            <li data-ar="أمثّل الفريق في الاجتماعات الفنية والتنسيقية مع الاستشاري ومدير المشروع والعميل.">Represent the team in technical and coordination meetings with the consultant, the project manager and the client.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">Jun 2024 — Jul 2026<span data-ar="استشاري">Consultant</span></div>
+        <div>
+          <h3 data-ar="قائد فريق أول — مهندس BIM إنشائي">Senior Team Leader — Structural BIM Engineer</h3>
+          <div class="co">Smart Engineering Consultancy — Cairo, Egypt</div>
+          <ul>
+            <li data-ar="قدت فريقًا من 18 مهندس BIM إنشائي عبر ستة مشاريع متزامنة في السعودية والإمارات والكويت، بتسليم نحو 15,000 لوحة تنفيذية بمستوى LOD 400/500.">Led a team of 18 structural BIM engineers across six concurrent projects in KSA, the UAE and Kuwait, delivering approximately 15,000 LOD 400/500 shop drawing sheets.</li>
+            <li data-ar="حافظت على نسبة اعتماد 95% من أول مرة في التقديمات الإنشائية عبر روتين مراجعة قبل التقديم.">Sustained a 95% first-time approval rate on structural submissions through a pre-submission review routine.</li>
+            <li data-ar="أدرت التنسيق الكامل بين الإنشائي والمعماري والـ MEP في Navisworks، ودفعت النماذج الموحّدة إلى حالة خالية من التعارضات قبل كل مرحلة تسليم.">Ran full structural, architectural and MEP coordination in Navisworks, driving federated models to a clash-free state ahead of every milestone.</li>
+            <li data-ar="مثّلت الفريق الإنشائي في الاجتماعات الفنية مع العملاء والاستشاريين في أربع دول.">Represented the structural team in technical meetings with clients and consultants across four countries.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">Jul 2021 — May 2024<span data-ar="مالك">Owner</span></div>
+        <div>
+          <h3 data-ar="مهندس مكتب فني أول">Senior Technical Office Engineer</h3>
+          <div class="co">Aqar Masr Developments — Cairo, Egypt</div>
+          <ul>
+            <li data-ar="مهندس إنشائي داخل المكتب الفني للمالك، مسؤول عن حزمة الرسومات التنفيذية الإنشائية بالكامل.">Structural engineer within the owner's internal technical office, accountable for the full structural shop drawing package.</li>
+            <li data-ar="راجعت حزم التصميم الإنشائي لالتقاط التعارضات والبيانات الناقصة قبل وصولها إلى الموقع.">Reviewed structural design packages to catch discrepancies and missing data before they reached site.</li>
+            <li data-ar="حصلت على اعتمادات الاستشاري وأصدرت الحزم المعتمدة إلى شركات المقاولات الشقيقة للتنفيذ.">Secured consultant approvals and issued approved packages to the sister contracting companies for execution.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">Dec 2019 — Jun 2021<span>Contractor</span></div>
+        <div>
+          <h3>Senior Technical Office Engineer</h3>
+          <div class="co">Giza Power Transmission &amp; Distribution — Egypt</div>
+          <ul>
+            <li data-ar="أدرت فريقًا من مهندسي المكتب الفني المبتدئين المسؤولين عن إنتاج الرسومات والتقديمات.">Managed a team of junior technical office engineers responsible for drawing production and submittals.</li>
+            <li data-ar="أعددت حصر الكميات وتقدير التكاليف وتفصيل المواد والعمالة والمعدات؛ وجهّزت جداول كميات مقاولي الباطن.">Produced quantity take-offs, cost estimation and material, labour and equipment breakdowns; prepared sub-contractor bills of quantities.</li>
+            <li data-ar="نسّقت بين الاستشاريين والمقاولين والملّاك وجهات المرافق في مواقع البنية التحتية القومية.">Coordinated between consultants, contractors, owners and utility authorities across national infrastructure sites.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">Jul 2017 — Nov 2019<span>Contractor</span></div>
+        <div>
+          <h3 data-ar="مهندس مكتب فني بالموقع">Site Technical Office Engineer</h3>
+          <div class="co">Solid Constructions — Egypt</div>
+          <ul>
+            <li data-ar="أنتجت وضبطت الرسومات الورشية الإنشائية وجداول تقطيع الحديد حتى اعتماد الاستشاري.">Produced and controlled structural workshop drawings and bar bending schedules through consultant approval.</li>
+            <li data-ar="عملت حلقة وصل تنسيقية بين المكتب الفني بالموقع والمكتب الرئيسي لتقديمات المعماري والـ MEP.">Acted as the coordination link between the site technical office and head office for architectural and MEP submissions.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when">Jul 2016 — Jun 2017<span>Contractor</span></div>
+        <div>
+          <h3>Site Technical Office Engineer</h3>
+          <div class="co">Al Shafar General Contracting (ASGC) — Cairo, Egypt</div>
+          <ul>
+            <li data-ar="أعددت وراجعت الرسومات التنفيذية الإنشائية وجداول التسليح وفق مواصفات المشروع.">Prepared and revised structural shop drawings and reinforcement schedules against project specifications.</li>
+            <li data-ar="نسّقت مع فرق الموقع والإدارات الهندسية لضمان دقة الرسومات وقابليتها للتنفيذ.">Coordinated with site teams and engineering departments to ensure drawing accuracy and buildability.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">F</text></svg>
+      <div><span class="kicker" data-ar="المشاريع">Projects</span><h2 data-ar="مشاريع مختارة">Selected delivery</h2></div>
+    </div>
+    <div class="projs">
+      <article class="proj"><span class="loc" data-ar="القاهرة الجديدة · مصر">New Cairo · Egypt</span><h3>Mountain View iCity — Crystal Lagoons</h3><p data-ar="مدير BIM · البحيرة وغرفة المكائن والكباري والشبكات تحت السطحية والمنخفضة · 2026 – حتى الآن">BIM Manager · lagoon, machine room, bridges, sub-surface and low-level networks · 2026 – present</p></article>
+      <article class="proj"><span class="loc" data-ar="الدرعية · السعودية">Diriyah · KSA</span><h3>Diriyah South District — Raffles Hotel &amp; Branded Residences</h3><p data-ar="قائد BIM الإنشائي · فندق 202 غرفة و90 وحدة سكنية، نماذج LOD 400 ورسومات تنفيذية · 2024 – 2026">Structural BIM lead · 202-key hotel and 90 residences, LOD 400 models and shop drawings · 2024 – 2026</p></article>
+      <article class="proj"><span class="loc">Diriyah · KSA</span><h3>King Salman University (KSU)</h3><p data-ar="BIM إنشائي · حرم جامعي متعدّد المباني في حي الملك سلمان المعرفي، LOD 400 · 2024 – 2026">Structural BIM · multi-block campus in the King Salman Knowledge District, LOD 400 · 2024 – 2026</p></article>
+      <article class="proj"><span class="loc" data-ar="الرياض · السعودية">Riyadh · KSA</span><h3>King Abdulaziz City Park — Green Riyadh</h3><p data-ar="BIM إنشائي · الأجنحة والتجمّعات التجارية وخزانات المياه ومحطات الضخ · 2024 – 2026">Structural BIM · pavilions, retail clusters, water tanks and pump stations · 2024 – 2026</p></article>
+      <article class="proj"><span class="loc" data-ar="شمال الرياض · السعودية">North Riyadh · KSA</span><h3>Almana New Riyadh Hospital</h3><p data-ar="BIM إنشائي · مستشفى 300 سرير و11 غرفة عمليات، منسّق مقابل MEP كثيف · 2024 – 2026">Structural BIM · 300-bed hospital with 11 operating theatres, coordinated against dense MEP · 2024 – 2026</p></article>
+      <article class="proj"><span class="loc" data-ar="أبوظبي والعين · الإمارات">Abu Dhabi &amp; Al Ain · UAE</span><h3>STEP Sewerage Network — Odour Control</h3><p data-ar="BIM إنشائي · أعمال التحكّم في الروائح على شبكة صرف STEP العميقة · 2024 – 2026">Structural BIM · odour control works on the STEP deep-tunnel sewerage network · 2024 – 2026</p></article>
+      <article class="proj"><span class="loc" data-ar="مدينة صباح الأحمد · الكويت">Sabah Al-Ahmad City · Kuwait</span><h3>Souk &amp; Hotel</h3><p data-ar="BIM إنشائي بمستوى LOD 400 · سوق من طابقين وفندق 110 غرف وجراجات متعدّدة الطوابق · 2024 – 2026">Structural BIM to LOD 400 · two-level souk, 110-room hotel and multi-storey car parks · 2024 – 2026</p></article>
+      <article class="proj"><span class="loc" data-ar="العاصمة الإدارية الجديدة · مصر">New Administrative Capital · Egypt</span><h3>Anakaji Compound</h3><p data-ar="المكتب الفني للمالك · حزمة الرسومات التنفيذية الإنشائية كاملة · 2021 – 2024">Owner's technical office · full structural shop drawing package · 2021 – 2024</p></article>
+      <article class="proj"><span class="loc" data-ar="مصر">Egypt</span><h3>Seashell Hotel · Seashell Units · Andrea Resort</h3><p data-ar="المكتب الفني بالموقع · الرسومات الورشية وجداول تقطيع الحديد · 2017 – 2019">Site technical office · workshop drawings and bar bending schedules · 2017 – 2019</p></article>
+      <article class="proj"><span class="loc" data-ar="القاهرة · مصر">Cairo · Egypt</span><h3>Cairo Festival City Living</h3><p data-ar="رسومات تنفيذية إنشائية وجداول تسليح · 2016 – 2017">Structural shop drawings and reinforcement schedules · 2016 – 2017</p></article>
+    </div>
+    <p class="note" data-ar="أسماء المشاريع مذكورة للسياق فقط. تظل الرسومات التنفيذية ووثائق المشاريع ملكًا لعملائها ولا تُنشر هنا — وهي متاحة عند الطلب بصيغة منقّحة، وبما يسمح به العميل.">Project names are listed for context. Shop drawings and project documentation remain the property of their clients and are not published here — available on request, in sanitized form, where the client permits.</p>
+  </div>
+</section>
+
+<!-- ===================== MODEL GALLERY ===================== -->
+<section id="models">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">G</text></svg>
+      <div><span class="kicker" data-ar="معرض النماذج">Model Gallery</span><h2 data-ar="أعمال أفتخر بها">Work I am proud of</h2>
+      <p class="sec-sub" data-ar="عيّنة من أعمالي: نماذج أنشأتها بنفسي، وأشرفت على رسوماتها التنفيذية من البداية للنهاية — المساقط العامة وتفاصيل التسليح على Revit. لقطات تحليلية فقط، بلا أختام ولا أبعاد. اضغط على أي لوحة لتكبيرها.">A sample of my work: models I authored myself, and whose shop drawings I supervised from end to end — general arrangement and reinforcement detailing in Revit. Analytical views only, with no title blocks and no dimensions. Click any plate to enlarge.</p></div>
+    </div>
+    <div class="gal">
+      <button class="plate" data-src="assets/model1.jpg" data-cap="Plate 01 — Souk and Hotel, Sabah Al-Ahmad City, Kuwait">
+        <div class="plate-img"><img src="assets/model1.jpg" alt="Structural Revit model of the Souk and Hotel development in Sabah Al-Ahmad City" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Souk and Hotel</b><p data-ar="مدينة صباح الأحمد، الكويت — سوق تجاري من طابقين، وفندق 110 غرف، وجراجات متعدّدة الطوابق على موقع مختلط بمساحة 40,000 م²، بمستوى LOD 400.">Sabah Al-Ahmad City, Kuwait — two-level retail souk, 110-room hotel and multi-storey car parks on a 40,000 m² mixed-use site, modelled to LOD 400.</p></div><i>Plate 01</i></div>
+      </button>
+      <button class="plate" data-src="assets/model2.jpg" data-cap="Plate 02 — King Salman University (KSU), Diriyah, KSA">
+        <div class="plate-img"><img src="assets/model2.jpg" alt="Structural Revit model of King Salman University" loading="lazy"></div>
+        <div class="plate-cap"><div><b>King Salman University (KSU)</b><p data-ar="الدرعية، السعودية — حرم جامعي داخل حي الملك سلمان المعرفي؛ منشأ متعدّد المباني بأنوية وبلاطات ناقلة ومظلات.">Diriyah, KSA — university campus within the King Salman Knowledge District; multi-block structure with cores, transfer slabs and canopies.</p></div><i>Plate 02</i></div>
+      </button>
+      <button class="plate" data-src="assets/model3.jpg" data-cap="Plate 03 — Almana New Riyadh Hospital, North Riyadh, KSA">
+        <div class="plate-img"><img src="assets/model3.jpg" alt="Structural Revit model of the Almana New Riyadh Hospital" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Almana New Riyadh Hospital</b><p data-ar="شمال الرياض، السعودية — مستشفى 300 سرير و11 غرفة عمليات؛ شبكة بحور متكرّرة فوق بدروم، مع جمالونات سقف.">North Riyadh, KSA — 300-bed hospital with 11 operating theatres; repetitive bay grid over a basement podium, with roof truss framing.</p></div><i>Plate 03</i></div>
+      </button>
+      <button class="plate" data-src="assets/model4.jpg" data-cap="Plate 04 — Diriyah South District, Raffles Hotel &amp; Branded Residences, Diriyah, KSA">
+        <div class="plate-img"><img src="assets/model4.jpg" alt="Structural Revit model of Diriyah South District Raffles Hotel and Branded Residences" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Diriyah South District — Raffles Hotel &amp; Branded Residences</b><p data-ar="الدرعية، السعودية — فندق فاخر 202 غرفة و90 وحدة سكنية فندقية على حافة الوادي؛ كتل متدرّجة تتبع الميل فوق طابقي بدروم.">Diriyah, KSA — 202-key upper-luxury hotel and 90 branded residences against the Wadi escarpment; stepped blocks following grade over two basement levels.</p></div><i>Plate 04</i></div>
+      </button>
+    </div>
+
+    <h3 class="gal-sub" data-ar="لقطات من المشاريع">Project views</h3>
+    <div class="views">
+      <button class="plate" data-src="assets/souk.jpg" data-cap="Souk and Hotel — Sabah Al-Ahmad City, Kuwait">
+        <div class="plate-img view"><img src="assets/souk.jpg" alt="Architectural view of the Souk and Hotel development, Kuwait" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Souk and Hotel</b><p data-ar="مدينة صباح الأحمد، الكويت">Sabah Al-Ahmad City, Kuwait</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/cfc_a.jpg" data-cap="Cairo Festival City Living — Cairo, Egypt">
+        <div class="plate-img view"><img src="assets/cfc_a.jpg" alt="Aerial view of Cairo Festival City Living" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Cairo Festival City Living</b><p data-ar="القاهرة، مصر">Cairo, Egypt</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/cfc_b.jpg" data-cap="Cairo Festival City Living — masterplan view, Cairo, Egypt">
+        <div class="plate-img view"><img src="assets/cfc_b.jpg" alt="Masterplan view of Cairo Festival City Living" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Cairo Festival City Living</b><p data-ar="مخطط عام — القاهرة، مصر">Masterplan view — Cairo, Egypt</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/diriyah_plan.jpg" data-cap="Diriyah South District — Raffles Hotel &amp; Branded Residences, masterplan">
+        <div class="plate-img view"><img src="assets/diriyah_plan.jpg" alt="Masterplan of Diriyah South District Raffles Hotel and Branded Residences" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Diriyah South District — Raffles</b><p data-ar="مخطط عام — الدرعية، السعودية">Masterplan — Diriyah, KSA</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/gr_aerial.jpg" data-cap="King Abdulaziz City Park — Green Riyadh, aerial view">
+        <div class="plate-img view"><img src="assets/gr_aerial.jpg" alt="Aerial view of King Abdulaziz City Park, Riyadh" loading="lazy"></div>
+        <div class="plate-cap"><div><b>King Abdulaziz City Park</b><p data-ar="منظر جوي — الرياض، السعودية">Aerial view — Riyadh, KSA</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/gr_render.jpg" data-cap="King Abdulaziz City Park — Green Riyadh, elevated walkway and water plaza">
+        <div class="plate-img view"><img src="assets/gr_render.jpg" alt="Render of the elevated walkway and water plaza at King Abdulaziz City Park" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Green Riyadh</b><p data-ar="الممشى المرتفع وساحة المياه — الرياض">Elevated walkway &amp; water plaza — Riyadh</p></div></div>
+      </button>
+    </div>
+    <p class="note" data-ar="لقطات المشاريع تُظهر المخططات كما صُمّمت؛ أما النماذج الإنشائية والرسومات التنفيذية خلفها فهي من عملي. تتوفّر لقطات إضافية وتقارير تعارضات وعيّنات وثائق منقّحة عند الطلب.">Project views are the schemes as designed; the structural models and shop drawings behind them are my own work. Further views, clash reports and sanitized documentation samples are available on request.</p>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICATIONS ===================== -->
+<section id="certifications">
+  <div class="wrap rv">
+    <div class="sec-head">
+      <svg class="sec-bub" viewBox="0 0 38 38"><circle cx="19" cy="19" r="17"/><text x="19" y="24" text-anchor="middle">H</text></svg>
+      <div><span class="kicker" data-ar="المؤهلات">Credentials</span><h2 data-ar="الشهادات والتعليم">Certifications &amp; education</h2>
+      <p class="sec-sub" data-ar="أربع شهادات في برامج Autodesk أُنجزت عام 2023. اضغط على أي شهادة لتكبيرها.">Four Autodesk course certifications completed in 2023. Click any certificate to enlarge.</p></div>
+    </div>
+    <div class="certgrid">
+      <button class="plate" data-src="assets/cert_str.jpg" data-cap="Advanced Revit Structure — Autodesk Authorized Training Center, 50 hours, August 2023">
+        <div class="plate-img cert"><img src="assets/cert_str.jpg" alt="Autodesk ATC certificate of completion — Advanced Revit Structure" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Advanced Revit Structure</b><p data-ar="Revit 2023 · 50 ساعة · أغسطس 2023">Revit 2023 · 50 hours · Aug 2023</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/cert_arch.jpg" data-cap="Advanced Revit Architecture — Autodesk Authorized Training Center, 50 hours, August 2023">
+        <div class="plate-img cert"><img src="assets/cert_arch.jpg" alt="Autodesk ATC certificate of completion — Advanced Revit Architecture" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Advanced Revit Architecture</b><p>Revit 2023 · 50 hours · Aug 2023</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/cert_bim.jpg" data-cap="BIM Coordination — Autodesk Authorized Training Center, Navisworks Manage 2023, September 2023">
+        <div class="plate-img cert"><img src="assets/cert_bim.jpg" alt="Autodesk ATC certificate of completion — BIM Coordination" loading="lazy"></div>
+        <div class="plate-cap"><div><b>BIM Coordination</b><p data-ar="Navisworks Manage 2023 · سبتمبر 2023">Navisworks Manage 2023 · Sep 2023</p></div></div>
+      </button>
+      <button class="plate" data-src="assets/cert_qs.jpg" data-cap="Quantity Survey in Revit — Autodesk Authorized Training Center, 20 hours, August 2023">
+        <div class="plate-img cert"><img src="assets/cert_qs.jpg" alt="Autodesk ATC certificate of completion — Quantity Survey in Revit" loading="lazy"></div>
+        <div class="plate-cap"><div><b>Quantity Survey in Revit</b><p data-ar="Revit 2023 · 20 ساعة · أغسطس 2023">Revit 2023 · 20 hours · Aug 2023</p></div></div>
+      </button>
+    </div>
+    <div class="edu-row">
+      <div>
+        <span class="yr">2009 — 2014</span>
+        <h3 data-ar="بكالوريوس الهندسة المدنية">Bachelor's Degree, Civil Engineering</h3>
+        <p data-ar="المعهد التكنولوجي العالي. عضو باتحاد الطلاب.">Higher Technological Institute. Member of the student union.</p>
+      </div>
+      <div>
+        <span class="yr" data-ar="اللغات">Languages</span>
+        <h3 data-ar="العربية والإنجليزية">Arabic &amp; English</h3>
+        <p data-ar="العربية لغة أم. الإنجليزية مستخدمة يوميًا مع الاستشاريين والعملاء في الخليج.">Arabic native. English used daily with consultants and clients across the Gulf.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <div class="wrap rv">
+    <div class="contact">
+      <span class="kicker-c" data-ar="<i></i>تواصل<i></i>"><i></i>Contact<i></i></span>
+      <h2 data-ar="أشركني قبل أول نموذج">Bring me in before the first model</h2>
+      <p data-ar="أرخص تعديل هو الذي يُجرى والمعايير ما زالت مجرّد وثيقة. متاح لوظائف إدارة الـ BIM وكبير مهندسي BIM الإنشائي.">The cheapest fix is the one made while the standards are still a document. Open to BIM Management and Senior Structural BIM roles.</p>
+      <div class="lines" style="margin-top:22px">
+        <button class="line dl-cv" type="button" style="cursor:pointer;border-color:rgba(59,158,255,.5)" data-ar="حمّل السيرة الذاتية (PDF)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3B9EFF" stroke-width="1.7"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg> Download CV (PDF)</button>
+      </div>
+      <div class="lines">
+        <a class="line" href="mailto:eng.islam.ramadan@hotmail.com">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          eng.islam.ramadan@hotmail.com</a>
+        <a class="line" href="tel:+201111295184">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.4 1.9.6 2.9.8a2 2 0 0 1 1.7 2z"/></svg>
+          +20 111 129 5184</a>
+        <a class="line" href="https://www.linkedin.com/in/islam-ramadan" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11.5 17v-4a2.5 2.5 0 0 1 5 0v4"/></svg>
+          LinkedIn</a>
+        <span class="line" style="color:var(--ink-2)">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-ar="القاهرة، مصر">Cairo, Egypt</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <span data-ar="إسلام رمضان شاكر — مدير BIM">Islam Ramadan Shaker — BIM Manager</span>
+    <span data-ar="القاهرة، مصر">Cairo, Egypt</span>
+  </div>
+</footer>
+
+
+<div class="lb" id="lb" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">&#10005;</button>
+  <img id="lbImg" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+</main>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){ e.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, {rootMargin:'0px 0px -8% 0px', threshold:0.04});
+  els.forEach(function(e){
+    var r = e.getBoundingClientRect();
+    if(r.top < window.innerHeight){ e.classList.add('in'); } else { io.observe(e); }
+  });
+})();
+
+(function(){
+  var lb=document.getElementById('lb'), im=document.getElementById('lbImg'),
+      cap=document.getElementById('lbCap'), cl=document.getElementById('lbClose'), last=null;
+  function open(btn){ last=btn; im.src=btn.getAttribute('data-src');
+    im.alt=btn.getAttribute('data-cap')||''; cap.textContent=btn.getAttribute('data-cap')||'';
+    lb.hidden=false; document.body.style.overflow='hidden'; cl.focus(); }
+  function close(){ lb.hidden=true; im.src=''; document.body.style.overflow='';
+    if(last){ last.focus(); last=null; } }
+  document.querySelectorAll('.plate').forEach(function(b){
+    b.addEventListener('click', function(){ open(b); });
+  });
+  cl.addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if(e.target===lb||e.target===cap) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !lb.hidden) close(); });
+})();
+
+/* ---------- CV download ---------- */
+(function(){
+  var CV_SRC = "assets/cv.pdf";
+  function download(){
+    try{
+      var url, isBlob = false;
+      if(CV_SRC.slice(0,7) === 'assets/'){
+        url = CV_SRC;
+      } else {
+        var bin = atob(CV_SRC), arr = new Uint8Array(bin.length);
+        for(var i=0;i<bin.length;i++){ arr[i] = bin.charCodeAt(i); }
+        url = URL.createObjectURL(new Blob([arr], {type:'application/pdf'}));
+        isBlob = true;
+      }
+      var a = document.createElement('a');
+      a.href = url; a.download = 'Islam_Ramadan_Shaker_CV.pdf';
+      document.body.appendChild(a); a.click();
+      setTimeout(function(){ if(isBlob) URL.revokeObjectURL(url); a.remove(); }, 2000);
+    }catch(e){ /* sandboxed preview blocks page-initiated downloads */ }
+  }
+  document.querySelectorAll('.dl-cv').forEach(function(b){ b.addEventListener('click', download); });
+})();
+
+/* ---------- language ---------- */
+(function(){
+  var btn = document.getElementById('langBtn');
+  if(!btn) return;
+  var nodes = document.querySelectorAll('[data-ar]');
+  nodes.forEach(function(el){ el.setAttribute('data-en', el.innerHTML); });
+  function apply(lang){
+    var ar = lang === 'ar';
+    document.documentElement.lang = ar ? 'ar' : 'en';
+    document.documentElement.dir  = ar ? 'rtl' : 'ltr';
+    document.body.classList.toggle('rtl', ar);
+    nodes.forEach(function(el){
+      el.innerHTML = ar ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+    });
+    btn.textContent = ar ? 'English' : 'العربية';
+    btn.setAttribute('lang', ar ? 'en' : 'ar');
+    try{ localStorage.setItem('irs-lang', lang); }catch(e){}
+  }
+  var saved = 'en';
+  try{ saved = localStorage.getItem('irs-lang') || 'en'; }catch(e){}
+  if(saved === 'ar'){ apply('ar'); }
+  btn.addEventListener('click', function(){
+    apply(document.body.classList.contains('rtl') ? 'en' : 'ar');
+  });
+})();
+
+/* ---------- custom cursor ---------- */
+(function(){
+  if(!window.matchMedia('(hover:hover) and (pointer:fine)').matches) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var root=document.documentElement; root.classList.add('cur');
+  var ring=document.createElement('div'); ring.className='cur-ring';
+  var lab=document.createElement('b'); ring.appendChild(lab);
+  var dot=document.createElement('div'); dot.className='cur-dot';
+  document.body.appendChild(ring); document.body.appendChild(dot);
+
+  var m={x:innerWidth/2,y:innerHeight/2}, r={x:m.x,y:m.y}, d={x:m.x,y:m.y}, mode='', mag=null;
+  var VIEW='[href], button, .plate, .proj, .cap, .step, .job, .line, input, textarea, select, summary';
+
+  function state(el){
+    if(!el) return '';
+    if(el.closest('.plate')) return 'view';
+    if(el.closest('.btn-primary, .btn, .dl-cv, .lang')) return 'magnet';
+    if(el.closest('[href], button, .proj, .cap, .step, .rev, .kpi, input, textarea')) return 'link';
+    return '';
+  }
+  function paint(){
+    var size=38, bg='transparent', bd='var(--accent-2)', txt='';
+    if(mode==='view'){ size=96; bg='var(--accent-2)'; bd='var(--accent-2)'; txt='VIEW'; }
+    else if(mode==='magnet'){ size=70; bg='rgba(59,158,255,.18)'; bd='var(--accent)'; }
+    else if(mode==='link'){ size=56; bg='rgba(47,214,195,.12)'; bd='var(--accent-2)'; }
+    ring.style.width=size+'px'; ring.style.height=size+'px';
+    ring.style.margin=(-size/2)+'px 0 0 '+(-size/2)+'px';
+    ring.style.backgroundColor=bg; ring.style.borderColor=bd;
+    lab.textContent=txt; lab.style.opacity=txt?'1':'0';
+  }
+  addEventListener('mousemove', function(e){
+    m.x=e.clientX; m.y=e.clientY; ring.classList.remove('cur-hide');
+    var t=e.target&&e.target.closest?e.target:null;
+    var s=state(t);
+    if(s!==mode){ mode=s; paint(); }
+    var mt=t&&t.closest?t.closest('.btn-primary, .btn, .dl-cv, .lang'):null;
+    if(mt){
+      var b=mt.getBoundingClientRect();
+      mt.classList.add('mag');
+      mt.style.transition='transform .12s ease-out';
+      mt.style.transform='translate('+((e.clientX-(b.left+b.width/2))*.16).toFixed(2)+'px,'+((e.clientY-(b.top+b.height/2))*.28).toFixed(2)+'px)';
+      mag=mt;
+    } else if(mag){
+      mag.style.transition='transform .4s cubic-bezier(.2,1.4,.4,1)';
+      mag.style.transform='translate(0,0)'; mag=null;
+    }
+  }, {passive:true});
+  addEventListener('mouseout', function(e){ if(!e.relatedTarget) ring.classList.add('cur-hide'); });
+  addEventListener('mousedown', function(){ ring.style.transform+=' scale(.82)'; });
+
+  (function loop(){
+    r.x+=(m.x-r.x)*.18; r.y+=(m.y-r.y)*.18;
+    d.x+=(m.x-d.x)*.45; d.y+=(m.y-d.y)*.45;
+    ring.style.transform='translate('+r.x+'px,'+r.y+'px)';
+    dot.style.transform='translate('+d.x+'px,'+d.y+'px)';
+    requestAnimationFrame(loop);
+  })();
+})();
+
+/* ---------- word-by-word entrance for headings ---------- */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function split(el, step, start){
+    if(!el || el.dataset.split==='1') return;
+    var i=0;
+    Array.prototype.slice.call(el.childNodes).forEach(function(node){
+      if(node.nodeType===3){
+        var frag=document.createDocumentFragment();
+        node.nodeValue.split(/(\s+)/).forEach(function(w){
+          if(!w.trim()){ frag.appendChild(document.createTextNode(w)); return; }
+          var wrap=document.createElement('span'); wrap.className='wsplit';
+          var inner=document.createElement('span'); inner.textContent=w;
+          inner.style.animationDelay=(start+(i++)*step)+'s';
+          wrap.appendChild(inner); frag.appendChild(wrap);
+        });
+        el.replaceChild(frag, node);
+      } else if(node.nodeType===1){
+        var disp=getComputedStyle(node).display;
+        var isBlock=(disp==='block'||disp==='list-item'||disp==='flex'||disp==='grid');
+        var wrap2=document.createElement('span'); wrap2.className='wsplit';
+        if(isBlock) wrap2.style.display='block';
+        var inner2=node.cloneNode(true);
+        inner2.style.animation='wordIn .95s cubic-bezier(.16,1,.3,1) '+(start+(i++)*step)+'s both';
+        wrap2.appendChild(inner2);
+        el.replaceChild(wrap2, node);
+      }
+    });
+    el.dataset.split='1';
+  }
+  function run(){
+    split(document.querySelector('.hero h1'), .08, .1);
+    split(document.querySelector('.hero .role'), .04, .45);
+    document.querySelectorAll('.sec-head h2').forEach(function(h){
+      if(h.dataset.qd==='1') return;
+      h.dataset.qd='1';
+      var io=new IntersectionObserver(function(en){
+        en.forEach(function(e){ if(e.isIntersecting){ split(e.target,.045,0); io.unobserve(e.target); } });
+      },{threshold:.3});
+      io.observe(h);
+    });
+  }
+  run();
+  var lb=document.getElementById('langBtn');
+  if(lb) lb.addEventListener('click', function(){
+    setTimeout(function(){
+      document.querySelectorAll('[data-split]').forEach(function(e){ e.removeAttribute('data-split'); });
+      document.querySelectorAll('.sec-head h2').forEach(function(e){ e.removeAttribute('data-qd'); });
+      run();
+    }, 40);
+  });
+})();
+
+/* ---------- live status dot + subtle parallax on hero card ---------- */
+(function(){
+  var dot=document.querySelector('.tag .dot');
+  if(dot) dot.style.animation='irsBlink 1.9s infinite';
+  var card=document.querySelector('.hero .tb, .hero .card, .hero aside');
+  if(!card || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  addEventListener('mousemove', function(e){
+    var cx=(e.clientX/innerWidth-.5), cy=(e.clientY/innerHeight-.5);
+    card.style.transform='translate3d('+(cx*10).toFixed(2)+'px,'+(cy*8).toFixed(2)+'px,0)';
+    card.style.transition='transform .5s cubic-bezier(.2,.8,.2,1)';
+  }, {passive:true});
+})();
+</script>
+<!--BODY-END-->
+</body>
+</html>
